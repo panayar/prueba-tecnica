@@ -5,7 +5,7 @@ import Detail from './pages/Detail'
 function App() {
   return (
     <Switch>
-      <Route exact path="/" component={Home} />
+      <Route exact path="/prueba-tecnica" component={Home} />
       <Route path="/detail-product/:id" component={Detail} />
     </Switch>
   );
