@@ -21,7 +21,7 @@ export default function Navbar() {
   const eventClick = () => search(element);
 
   const goMain = () => {
-    history.push('/');
+    history.push('/prueba-tecnica/');
   };
 
   //Metodo que realiza la busqueda de datos con la API de mercado libre
