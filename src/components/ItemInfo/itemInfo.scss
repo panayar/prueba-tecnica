@@ -1,0 +1,133 @@
+@import "../../scss/global.scss";
+
+
+.detail-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 80%;
+    background-color: $bgList;
+    border-radius: $r-boder;
+    padding: 32px;
+}
+
+
+.detail-img {
+    width: 70%;
+    text-align: center;
+
+    & img {
+        width: 400px;
+        height: 400px;
+        object-fit: contain;
+        margin: auto;
+        border-radius: $r-boder;
+    }
+}
+
+
+.detail-description {
+    margin-top: 0;
+    padding-left: 32px;
+    width: 30%;
+}
+
+
+.product-condition {
+
+    font-size: $txt-small;
+    color: $tertiary;
+    margin-bottom: 16px;
+
+}
+
+
+.title {
+    font-size: $txt-large;
+    margin-bottom: 32px;
+    font-weight: $txt-bold;
+}
+
+
+.Price {
+    font-size: $price-large;
+    margin-bottom: 32px;
+}
+
+.item-shipping-img {
+    width: 20px;
+    height: 20px;
+    margin-left: 8px;
+}
+
+
+.detail-btn {
+    width: 100%;
+    font-size: $input-text;
+    background-color: $secondary;
+    border: none;
+    color: $bgList;
+    padding: 8px;
+    border-radius: $r-boder;
+    font-weight: 100;
+    &:hover {
+        cursor: pointer;
+        filter: brightness(0.9);
+    }
+}
+
+
+.title-description {
+    font-size: $subtitle;
+    color: $primaryFont;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+.product-description {
+    width: 70%;
+}
+
+
+.description {
+    color: $tertiaryFont;
+    font-size: $paragraph;
+    text-align: justify;
+}
+
+
+
+
+@media (max-width: $desktopBreak ) {
+
+    .detail-container {
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+
+@media (max-width: 40em){
+
+    .detail-img {
+        width: 100%;
+        text-align: center;
+
+        & img {
+            width: 300px;
+            height: 300px;
+        }
+    }
+
+    .detail-description {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .product-description {
+        width: 100%;
+    }
+
+
+}

@@ -1,0 +1,50 @@
+@import "../../scss/global.scss";
+
+
+
+.navContainer {
+  width: 100%;
+  height: auto;
+  background-color: $primary;
+  margin: auto;
+  padding: 4px;
+  position: sticky;
+}
+
+.search-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchBar {
+  width: 69.5%;
+  height: 40px;
+  border: none;
+  border-radius: 4px 0px 0px 4px;
+  padding: 12px;
+  margin-left: 24px;
+  color: $tertiaryFont;
+  font-size: $input-text;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.btn-searchBar {
+  height: 40px;
+  width: 40px;
+  border-radius: 0px 4px 4px 0px;
+  border: none;
+  background-color: $light-grey;
+
+  &:hover {
+    cursor: pointer;
+    filter: brightness(0.9);
+  }
+}
+
+.searchBar-logo {
+  cursor: pointer;
+}

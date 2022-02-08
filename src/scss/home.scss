@@ -1,0 +1,25 @@
+@import "./global.scss";
+
+.itemList {
+    background-color: $bgList;
+    width: 100%;
+    border-radius: $r-boder;
+    margin-bottom: 40px;
+    }
+
+.list-container {
+    width: 80%;
+    margin: auto;
+    background-color: $bgList;
+    border-radius: $r-boder;
+}
+
+
+@media (max-width: $desktopBreak ) {
+
+    .list-container {
+        width: 100%;
+        height: auto;
+    }
+
+}
