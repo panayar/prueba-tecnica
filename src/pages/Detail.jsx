@@ -1,4 +1,4 @@
-import React, { useEffect , useState } from "react";
+import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import ItemInfo from "../components/ItemInfo/ItemInfo";
@@ -8,18 +8,12 @@ import Navbar from "../components/navbar/Navbar";
 export default function Detail() {
   const { id } = useParams();
   const dispatch = useDispatch();
-  const [state, setState] = useState({});
-  const [condition, setCondition] = useState('');
   const productDetail = useSelector((state) => state.product.productDetail);
   const productDescription = useSelector((state) => state.product.productDescription);
 
   useEffect(() => {
     getProduct();
     getDescription();
-
-    return () => {
-      setState({});
-    };
 
   }, []);
 
@@ -63,6 +57,7 @@ export default function Detail() {
   return (
       <div>
       <Navbar/>
+      <br></br>
       {
         productDetail.id === id  && productDetail !== undefined?
         <>

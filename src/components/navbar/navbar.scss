@@ -1,13 +1,11 @@
 @import "../../scss/global.scss";
 
 
-
 .navContainer {
   width: 100%;
   height: auto;
   background-color: $primary;
   margin: auto;
-  padding: 4px;
   position: sticky;
 }
 
@@ -15,6 +13,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 12px;
 }
 
 .searchBar {
@@ -47,4 +46,16 @@
 
 .searchBar-logo {
   cursor: pointer;
+}
+
+
+@media (max-width: $mobileBreak) {
+
+  .searchBar-logo {
+
+    width: 50px;
+
+  }
+
+
 }

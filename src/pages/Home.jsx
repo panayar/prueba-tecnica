@@ -21,7 +21,7 @@ export default function Home() {
   return (
     <div>
       <Navbar />
-
+      <br></br>
       {/* Mapeo de productos */}
       {products.map((product) => (
 
@@ -32,6 +32,7 @@ export default function Home() {
 
         </div>
       ))}
+      <br></br>
     </div>
   );
 }
