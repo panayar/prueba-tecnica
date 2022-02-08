@@ -15,7 +15,7 @@ export default function Home() {
 
   //Metodo para  redirigir a detail con el id correspondiente
   const goDetail = (id) => {
-    history.push(`/detail-product/${id}/paula-anaya`);
+    history.push(`/detail-product/${id}`);
   };
 
   return (
